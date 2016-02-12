@@ -6,7 +6,7 @@ var express = require('express'),
 server.use(logger);
 server.use(express.static(__dirname+'/public'));
 
-server.set('port', (procress.env.PORT || 8080)); //opens up communication to incomming ports
+server.set('port', (process.env.PORT || 8080)); //opens up communication to incomming ports
 
 server.get('/', home);
 
@@ -19,5 +19,5 @@ function home(req, res){
 }
 
 function listenCallback(){
-  console.log('Now listening on '  +  server.get('port')); //console logs the incomming port number
+  console.log('Now listening on '  + server.get('port')); //console logs the incomming port number
 }
