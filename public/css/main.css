@@ -1,30 +1,91 @@
+
 .row {
-  width: 280px;
+  position:relative;
   margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+
 }
 
 #content{
-  
+
+  background-image: url('https://i.ytimg.com/vi/6F9cDSEizFM/maxresdefault.jpg');
+  background-size: cover;
+
 }
 
 #calculator-body {
-  
+
+    background: #aebcbf;
+    background: -moz-linear-gradient(top, #aebcbf 0%, #6e7774 29%, #6e7774 29%, #6e7774 50%, #6e7774 53%, #0a0e0a 95%, #0a0e0a 98%, #0a0e0a 98%);
+    background: -webkit-linear-gradient(top, #aebcbf 0%,#6e7774 29%,#6e7774 29%,#6e7774 50%,#6e7774 53%,#0a0e0a 95%,#0a0e0a 98%,#0a0e0a 98%);
+    background: linear-gradient(to bottom, #aebcbf 0%,#6e7774 29%,#6e7774 29%,#6e7774 50%,#6e7774 53%,#0a0e0a 95%,#0a0e0a 98%,#0a0e0a 98%);
+    width: 40%;
+    height: 500%;
+    border-radius: 6%;
+    text-align: center;
+    -webkit-box-shadow: 10px 13px 5px 0px rgba(5,5,5,1);
+    -moz-box-shadow: 10px 13px 5px 0px rgba(5,5,5,1);
+     box-shadow: 10px 13px 5px 0px rgba(5,5,5,1);
+
 }
+/*#calculator-body:hover{
+  background-image: url('http://giphy.com/gifs/pizza-darth-vader-funny-9B5EkgWrF4Rri');
+  background-size: contain;
+  background-repeat: repeat-x;
+}*/
 
 #display {
-  
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 70px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 50px;
+  background-color: white;
+  width: 95%;
+  height:100px;
+  border-radius: 5%;
+  padding-right:10px;
+  margin-left: 20px;
+  border-color: red;
 }
 
 .key {
-  
+  font-family: Comic Sans MS;
+  font-weight:bold;
+  padding-left: 90px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 12%;
+  background-color: #FF8C00;
+  border-color:black;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(5,5,5,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(5,5,5,1);
+   box-shadow: 10px 7px 5px 0px rgba(5,5,5,1);
+}
+.key:hover{
+  background-image: url('http://images.lingscars.com/images/header/webcams/chicken-ani.gif');
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.key.btn.operator:hover{
+  background-image: url('http://www.picgifs.com/graphics/p/pikachu/graphics-pikachu-453448.gif');
+  background-size:contain;
+  background-repeat: repeat;
 }
 
 .operator {
-  
+ background-color: red;
+
 }
 
+img:hover {
+        -webkit-filter: invert(1);
+         filter: invert(1);
+ }
+
 #equal{
-  
-}
+ width:80%;
+
+ }

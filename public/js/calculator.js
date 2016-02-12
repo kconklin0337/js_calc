@@ -7,41 +7,62 @@ var Calculator = {
   divide: divide,
   result: result,
   reset: reset,
-  addToMemory: addToMemory,
-  subtractFromMemory: subtractFromMemory,
+  memAdd: memAdd,
+  memSub: memSub,
+  memClear: memClear,
+  memDisplay: memDisplay,
+  squareRoot: squareRoot,
+  percentage: percentage,
+  backspace: backspace,
 }
 
 function add(num){
   this.current += num;
 }
+
 function subtract(num){
-  
+  this.current -= num;
 }
+
 function multiply(num){
-  
+  this.current *= num;
 }
+
 function divide(num){
-  
+  this.current /= num;
 }
+
 function result(){
   return this.current;
 }
+
 function reset(num){
   this.current = 0;
 }
 
-function addToMemory(num){
+function memAdd(num){
   this.memory += num;
 }
 
-function subtractFromMemory(num){
-  this.current -= num;
+function memSub(num){
+  this.memory -= num;
 }
 
-function clearMemory(){
+function memClear(){
   this.memory = 0;
 }
 
-function getMemory(){
+function memDisplay(){
   return this.memory;
 }
+
+function squareRoot(num){
+  this.current = Math.sqrt(num);
+}
+
+// function percentCal(num){
+//   this.current /100 = num;
+// }
+function backspace(){
+  this.current =  value.length - 1;
+  }

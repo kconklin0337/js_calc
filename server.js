@@ -6,10 +6,12 @@ var express = require('express'),
 server.use(logger);
 server.use(express.static(__dirname+'/public'));
 
+server.set('port', (procress.en.PORT || 8080)); //opens up communication to incomming ports
+
 server.get('/', home);
 
 
-server.listen(8080, listenCallback);
+server.listen(server.get('port'), listenCallback); //server go get the port and listen
 
 
 function home(req, res){
@@ -17,5 +19,5 @@ function home(req, res){
 }
 
 function listenCallback(){
-  console.log('Now listening on port ' + 8080);
+  console.log('Now listening on '  +  server.get('port')); //console logs the incomming port number
 }
