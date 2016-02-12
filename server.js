@@ -6,7 +6,7 @@ var express = require('express'),
 server.use(logger);
 server.use(express.static(__dirname+'/public'));
 
-server.set('port', (procress.en.PORT || 8080)); //opens up communication to incomming ports
+server.set('port', (procress.env.PORT || 8080)); //opens up communication to incomming ports
 
 server.get('/', home);
 
