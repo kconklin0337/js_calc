@@ -43,11 +43,12 @@
   font-size: 50px;
   background-color: white;
   width: 95%;
-  height:100px;
+  height:70px;
   border-radius: 5%;
   padding-right:10px;
   margin-left: 20px;
   border-color: red;
+
 }
 
 .key {
@@ -77,7 +78,9 @@
 
 .operator {
  background-color: red;
-
+ position: right;
+ align-items: right;
+ margin-left: 20%;
 }
 
 img:hover {

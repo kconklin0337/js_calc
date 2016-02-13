@@ -117,7 +117,7 @@ function clear(){
                    lastOperation = '';
                    $display.text("0");
                    clearDisplay=true;
-}
+                   }
 
 function memAdd(){
            calculator.memory = calculator.memory + parseFloat($display.text());
